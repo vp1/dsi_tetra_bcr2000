@@ -302,7 +302,7 @@ $encoder 39 ; Clock Divide
   .default 6
 
 $encoder 40 ; Tempo
-  .easypar NRPN 1 92 30 250 absolute/14
+  .easypar NRPN 1 91 30 250 absolute/14
   .showvalue on
   .mode 1dot
   .resolution 96 96 96 96
@@ -439,7 +439,7 @@ $button 1 ; Osc1 Shape
   .minmax 0 3
   .tx $B0 $63 0   $B0 $62 2   $B0 $06 0   $B0 $26 val
 
-$button 2 ; Osc2 Shape
+$button 5 ; Osc2 Shape
   .showvalue on
   .mode incval 1
   .default 1
@@ -572,14 +572,14 @@ $button 43 ; Key Priority
   .mode incval 1
   .default 0
   .minmax 0 5
-  .tx $B0 $63 0   $B0 $62 95   $B0 $06 0   $B0 $26 val
+  .tx $B0 $63 0   $B0 $62 96   $B0 $06 0   $B0 $26 val
 
 $button 44 ; Unison Mode
   .showvalue on
   .mode incval 1
   .default 0
   .minmax 0 4
-  .tx $B0 $63 0   $B0 $62 96   $B0 $06 0   $B0 $26 val
+  .tx $B0 $63 0   $B0 $62 95   $B0 $06 0   $B0 $26 val
 
 $button 45 ; Sequencer TriggerMode
   .showvalue on
