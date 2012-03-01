@@ -23,7 +23,7 @@ int main (int argc, char *argv[]) {
   while(!inf.getline(textLine, 256).eof())
   {
      cout << std::string(&syxHeader[0], 7) << countMsb << countLsb << textLine << syxEnd;
-     if( (countLsb = (countLsb+1)%256) == 0)
+     if( (countLsb = (countLsb+1)%128) == 0)
        ++countMsb;
   }
 
