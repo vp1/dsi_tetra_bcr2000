@@ -120,7 +120,7 @@ $encoder 15 ; VCA Sustain
   .showvalue on
   .mode bar
   .resolution 96 96 96 96
-  .default 0
+  .default 127
 
 $encoder 16 ; VCA Release
   .easypar NRPN 1 36 0 127 absolute/14
@@ -403,7 +403,7 @@ $encoder 53 ; VCA EnvAmmount
   .showvalue on
   .mode 1dot/off
   .resolution 96 96 96 96
-  .default 0
+  .default 127
 
 $encoder 54 ; VCA EnvVelocityAmmount
   .easypar NRPN 1 31 0 127 absolute/14
@@ -621,33 +621,18 @@ $button 48 ; Assign ModDests
 
   ; 4 BUTTONS
 
-$button 49 ; MultiMode On/Off
-  .showvalue on
-  .mode toggle
-  .default 0
-  .minmax 0 1
-  .tx $B0 $63 1   $B0 $62 151   $B0 $06 0   $B0 $26 val
-
-$button 50 ; Audio Out
+$button 49 ; Audio Out
   .showvalue on
   .mode incval 1
   .default 0
   .minmax 0 3
-  .tx $B0 $63 1   $B0 $62 144   $B0 $06 0   $B0 $26 val
+  .tx $B0 $63 3   $B0 $62 16   $B0 $06 0   $B0 $26 val
 
-$button 51 ; Channel Decrease
-  .showvalue on
-  .mode down
-  .default 0
-  .minmax 0 0
-  .tx $B0 $63 1   $B0 $62 130   $B0 $61 0 
+;$button 50 ; 
 
-$button 52 ; Channel Increase
-  .showvalue on
-  .mode down
-  .default 0
-  .minmax 0 0
-  .tx $B0 $63 1   $B0 $62 130   $B0 $60 0 
+;$button 51 ; 
+
+;$button 52 ; 
 
 
 $store 10
